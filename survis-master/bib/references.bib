@@ -1,0 +1,175 @@
+@ARTICLE{Kuang_2024_MIFI,
+  author={Kuang, Jian and Li, Wenjing and Li, Fang and Zhang, Jun and Wu, Zhongcheng},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+ series = {T-ITS},
+  title={MIFI: MultI-Camera Feature Integration for Robust 3D Distracted Driver Activity Recognition}, 
+  year={2024},
+  volume={25},
+  number={1},
+  abstract={Distracted driver activity recognition plays a critical role in risk aversion-particularly beneficial in intelligent transportation systems. However, most existing methods make use of only the video from a single view and the difficulty-inconsistent issue is neglected. Different from them, in this work, we propose a novel MultI-camera Feature Integration (MIFI) approach for 3D distracted driver activity recognition by jointly modeling the data from different camera views and explicitly re-weighting examples based on their degree of difficulty. Our contributions are two-fold: (1) We propose a simple but effective multi-camera feature integration framework and provide three types of feature fusion techniques. (2) To address the difficulty-inconsistent problem in distracted driver activity recognition, a periodic learning method, named example re-weighting that can jointly learn the easy and hard samples, is presented. The experimental results on the 3MDAD dataset demonstrate that the proposed MIFI can consistently boost performance compared to single-view models.},
+  keywords={Behavioral sciences;Feature extraction;Cameras;Vehicles;Three-dimensional displays;Task analysis;Activity recognition;Distracted driver recognition;3D;multi-view feature learning;example re-weighting},
+  doi={10.1109/TITS.2023.3304317},
+  ISSN={1558-0016},
+  month={Jan},
+  url={https://ieeexplore.ieee.org/abstract/document/10226521?casa_token=cyzb8nSy7AsAAAAA:bzOT9i1DswF7TTDxRJxw55m1k0bFWjfP7BT9LTRqJCtkVnTX7NokWJce6pgYkrbpIPay3UAt},
+}
+
+
+
+@article{Wang_2023_100-Driver,
+  abstract = {Distracted driver classification (DDC) plays an important role in ensuring driving safety. Although many datasets are introduced to support the study of DDC, most of them are small in data size and are short of diversity in environmental variations. This largely limits the development of DDC since many practical problems such as the cross-modality setting cannot be fully studied. In this paper, we introduce 100-Driver, a large-scale, diverse posture-based distracted diver dataset, with more than 470K images taken by 4 cameras observing 100 drivers over 79 hours from 5 vehicles. 100-Driver involves different types of variations that closely meet real-world applications, including changes in the vehicle, person, camera view, lighting, and modality. We provide a detailed analysis of 100-Driver and present 4 settings for investigating practical problems of DDC, including the traditional setting without domain shift and 3 challenging settings ( i.e. , cross-modality, cross-view, and cross-vehicle) with domain shifts. We conduct comprehensive experiments on these 4 settings with state-the-of-art techniques and show several insights to the future study of DDC. Our 100-Driver will be publicly available offering new opportunities to advance the development of DDC. The 100-driver dataset, source code, and evaluation protocols are available at https://100-driver.github.io. },
+   author={Wang, Jing and Li, Wenjing and Li, Fang and Zhang, Jun and Wu, Zhongcheng and Zhong, Zhun and Sebe, Nicu},
+  doi={10.1109/TITS.2023.3255923},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  keywords={Vehicles;Behavioral sciences;Cameras;Accidents;Safety;Task analysis;Roads;Distracted driver dataset;large-scale;cross-modality;cross-view;cross-vehicle},
+  number={7},
+  publisher = {IEEE},   
+  volume = {24},
+  series = {T-ITS},  
+  title = {100-Driver: A Large-Scale, Diverse Dataset for Distracted Driver Classification},
+  url = {https://ieeexplore.ieee.org/document/10077451},
+  year = {2023}
+}
+
+
+
+
+
+
+
+@ARTICLE{2022_Qin_CNN,
+  author={Qin, Binbin and Qian, Jiangbo and Xin, Yu and Liu, Baisong and Dong, Yihong},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+series = {T-ITS},
+  title={Distracted Driver Detection Based on a CNN With Decreasing Filter Size}, 
+  year={2022},
+  volume={23},
+  number={7},
+  pages={6922-6933},
+  abstract={In recent years, the number of traffic accident deaths due to distracted driving has been increasing dramatically. Fortunately, distracted driving can be detected by the rapidly developing deep learning technology. Nevertheless, considering that real-time detection is necessary, three contradictory requirements for an optimized network must be addressed: a small number of parameters, high accuracy, and high speed. We propose a new D-HCNN model based on a decreasing filter size with only 0.76M parameters, a much smaller number of parameters than that used by models in many other studies. D-HCNN uses HOG feature images, L2 weight regularization, dropout and batch normalization to improve the performance. We discuss the advantages and principles of D-HCNN in detail and conduct experimental evaluations on two public datasets, AUC Distracted Driver (AUCD2) and State Farm Distracted Driver Detection (SFD3). The accuracy on AUCD2 and SFD3 is 95.59% and 99.87%, respectively, higher than the accuracy achieved by many other state-of-the-art methods.},
+  keywords={Convolution;Feature extraction;Real-time systems;Vehicles;Graphics processing units;Deep learning;Task analysis;Distracted driving;HOG;decreasing filter size;CNN},
+  doi={10.1109/TITS.2021.3063521},
+  ISSN={1558-0016},
+  month={July},
+url = {https://ieeexplore.ieee.org/abstract/document/9380666?casa_token=zjBFp2QiOMAAAAAA:TAP-x5bofgcI-hXT6Sql-F8U-3WlRdVw_r9PWuKAZJmRZ2iq1jgOBHtxkynRksVENkdtQjYP}
+
+}
+
+
+@ARTICLE{Liu_2023_Extremely Lightweight,
+  author={Liu, Dichao and Yamasaki, Toshihiko and Wang, Yu and Mase, Kenji and Kato, Jien},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+series = {T-ITS},
+  title={Toward Extremely Lightweight Distracted Driver Recognition With Distillation-Based Neural Architecture Search and Knowledge Transfer}, 
+  year={2023},
+  volume={24},
+  number={1},
+  pages={764-777},
+  abstract={The number of traffic accidents has been continuously increasing in recent years worldwide. Many accidents are caused by distracted drivers, who take their attention away from driving. Motivated by the success of Convolutional Neural Networks (CNNs) in computer vision, many researchers developed CNN-based algorithms to recognize distracted driving from a dashcam and warn the driver against unsafe behaviors. However, current models have too many parameters, which is unfeasible for vehicle-mounted computing. This work proposes a novel knowledge-distillation-based framework to solve this problem. The proposed framework first constructs a high-performance teacher network by progressively strengthening the robustness to illumination changes from shallow to deep layers of a CNN. Then, the teacher network is used to guide the architecture searching process of a student network through knowledge distillation. After that, we use the teacher network again to transfer knowledge to the student network by knowledge distillation. Experimental results on the Statefarm Distracted Driver Detection Dataset and AUC Distracted Driver Dataset show that the proposed approach is highly effective for recognizing distracted driving behaviors from photos: (i) the teacher network’s accuracy surpasses the previous best accuracy; (ii) the student network achieves very high accuracy with only 0.42M parameters (around 55% of the previous most lightweight model). Furthermore, the student network architecture can be extended to a spatial-temporal 3D CNN for recognizing distracted driving from video clips. The 3D student network largely surpasses the previous best accuracy with only 2.03M parameters on the Drive&Act Dataset. The source code is available at https://github.com/Dichao-Liu/Lightweight_Distracted_Driver_Recognition_with_Distillation-Based_NAS_and_Knowledge_Transfer},
+  keywords={Task analysis;Vehicles;Computer architecture;Lighting;Knowledge engineering;Training;Behavioral sciences;Distracted driving;decreasing filter size;advanced driver assistance;intelligent vehicles;ConvNets;action recognition},
+  doi={10.1109/TITS.2022.3217342},
+  ISSN={1558-0016},
+  month={Jan},
+url = {https://ieeexplore.ieee.org/abstract/document/9940550},
+
+}
+
+
+
+
+@article{Das_2022_Multimodal Signals,
+author = {Das, Kapotaksha and Papakostas, Michalis and Riani, Kais and Gasiorowski, Andrew and Abouelenien, Mohamed and Burzo, Mihai and Mihalcea, Rada},
+title = {Detection and Recognition of Driver Distraction Using Multimodal Signals},
+year = {2022},
+issue_date = {December 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {12},
+number = {4},
+issn = {2160-6455},
+url = {https://doi.org/10.1145/3519267},
+doi = {10.1145/3519267},
+abstract = {Distracted driving is a leading cause of accidents worldwide. The tasks of distraction detection and recognition have been traditionally addressed as computer vision problems. However, distracted behaviors are not always expressed in a visually observable way. In this work, we introduce a novel multimodal dataset of distracted driver behaviors, consisting of data collected using twelve information channels coming from visual, acoustic, near-infrared, thermal, physiological and linguistic modalities. The data were collected from 45 subjects while being exposed to four different distractions (three cognitive and one physical). For the purposes of this paper, we performed experiments with visual, physiological, and thermal information to explore potential of multimodal modeling for distraction recognition. In addition, we analyze the value of different modalities by identifying specific visual, physiological, and thermal groups of features that contribute the most to distraction characterization. Our results highlight the advantage of multimodal representations and reveal valuable insights for the role played by the three modalities on identifying different types of driving distractions.},
+journal = {ACM Trans. Interact. Intell. Syst.},
+month = {dec},
+articleno = {33},
+numpages = {28},
+keywords = {Distracted driving, machine learning, physiological signal processing, action unit analysis, thermal (keyword), multimodal interaction, multimodal datasets}
+}
+
+@INPROCEEDINGS{Moslemi_2019_3D Convolutional Neural Networks,
+  author={Moslemi, Negar and Azmi, Reza and Soryani, Mohsen},
+  booktitle={2019 4th International Conference on Pattern Recognition and Image Analysis (IPRIA)}, 
+  title={Driver Distraction Recognition using 3D Convolutional Neural Networks}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={145-151},
+  abstract={The number of road accidents and deaths due to distracted driving is continuously increasing in recent years. Usage of mobile phones, talking to passengers and reaching behind to take something while driving are some of the reasons due to which drivers may get distracted. Distractions are of numerous types, out of which we focus on manual distractions which are based on the posture of the driver. We have considered two datasets that incorporate drivers engaging in several different distracting behaviors using left and/or right hands seen from a camera. In this research, we have derived a benefit from temporal information by using a 3D convolutional neural network and optical flow to improve the driver distraction monitoring task. Results have shown that fine-tuning a pertained network on Kinetics dataset for learning driver action achieves a detection accuracy about 90% on State Farm dataset, which outperforms other methods on the same dataset.},
+  keywords={Vehicles;Three-dimensional displays;Training;Videos;Task analysis;Manuals;Monitoring;convolutional neural network;distraction;driver action;fine-tuning;temporal information},
+  doi={10.1109/PRIA.2019.8786012},
+  ISSN={2049-3630},
+  month={March},
+url={https://ieeexplore.ieee.org/abstract/document/8786012?casa_token=rR7SfE8YESAAAAAA:apinu4tprzahQrvrUeHjCNyhLMbusEFyMyffPCsrp29_7ThaIaD_4qrD4XPIqNfnRwCweiPz},}
+
+
+
+@article{Sun_2024_latest,
+  title={A Lightweight Model for Distracted Driver Detection Based on Neural Architecture Search and Coordinate Attention},
+  author={Sun, HaiBin and Zhang, MengTing},
+  journal={Available at SSRN 4819887},
+year={2024},
+abstract={According to research, the majority of accidents are caused by distracted drivers.The distracted driver recognition task can be achieved through deep learning techniques, and the lightweight deep learning model for this task has been a hot research field. The Neural Architecture Search (NAS) is utilized to discover a lightweight model by introducing Conditionally Parameterized Convolutions (CondConv) in this paper,, which is used to construct a neural architecture searching space. Firstly, the NAS is employed to discover the lightweight model called CondConv Network (CNET). Subsequently, the Coordinate Attention mechanism is added into CNET to create a novel lightweight framework known as CondConv Coordinate Attention Network (CCNET).Two public datasets, AUC Distracted Driver (AUCD2) and State Farm Distracted Driver Detection (SFD3), are used for experimental evaluations. The accuracy of the CCNET for AUCD2is 95.52%, while it ranges from 99.8% to 99.9% for SFD3. These experimental results indicate that the performance of CCNET is superior to most of theprevious lightweight models. Notably, the CCNET model has only 1.7 million parameters, smaller than most of the preceding lightweight models},
+keywords={Distracted driving, Coordinate Attention, Neural Architecture Search, CNN},
+url={https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4819887},
+}
+
+
+@ARTICLE{Xing_3 CNN_image-based,
+  author={Xing, Yang and Lv, Chen and Wang, Huaji and Cao, Dongpu and Velenis, Efstathios and Wang, Fei-Yue},
+  journal={IEEE Transactions on Vehicular Technology}, 
+  title={Driver Activity Recognition for Intelligent Vehicles: A Deep Learning Approach}, 
+  year={2019},
+  volume={68},
+  number={6},
+  pages={5379-5390},
+  abstract={Driver decisions and behaviors are essential factors that can affect the driving safety. To understand the driver behaviors, a driver activities recognition system is designed based on the deep convolutional neural networks (CNN) in this paper. Specifically, seven common driving activities are identified, which are the normal driving, right mirror checking, rear mirror checking, left mirror checking, using in-vehicle radio device, texting, and answering the mobile phone, respectively. Among these activities, the first four are regarded as normal driving tasks, while the rest three are classified into the distraction group. The experimental images are collected using a low-cost camera, and ten drivers are involved in the naturalistic data collection. The raw images are segmented using the Gaussian mixture model to extract the driver body from the background before training the behavior recognition CNN model. To reduce the training cost, transfer learning method is applied to fine tune the pre-trained CNN models. Three different pre-trained CNN models, namely, AlexNet, GoogLeNet, and ResNet50 are adopted and evaluated. The detection results for the seven tasks achieved an average of 81.6% accuracy using the AlexNet, 78.6% and 74.9% accuracy using the GoogLeNet and ResNet50, respectively. Then, the CNN models are trained for the binary classification task and identify whether the driver is being distracted or not. The binary detection rate achieved 91.4% accuracy, which shows the advantages of using the proposed deep learning approach. Finally, the real-world application are analyzed and discussed.},
+  keywords={Vehicles;Task analysis;Image segmentation;Activity recognition;Mirrors;Monitoring;Feature extraction;Driver behavior;driver distraction;convolutional neural network;transfer learning},
+  doi={10.1109/TVT.2019.2908425},
+  ISSN={1939-9359},
+  month={June},
+url={https://ieeexplore.ieee.org/abstract/document/8678436?casa_token=tCGoa3pRCVAAAAAA:iNEbhbeMUSABzogTrpyXY3qHibNv_63KSxDnQzjhaAY8GsuT2Lyy4Q3qE4hJSeTiq9RgJwEi},}
+
+
+
+
+@ARTICLE{Billah_2019_video-based,
+  author={Billah, Tashrif and Rahman, S. M. Mahbubur and Ahmad, M. Omair and Swamy, M. N. S.},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={Recognizing Distractions for Assistive Driving by Tracking Body Parts}, 
+  year={2019},
+  volume={29},
+  number={4},
+  pages={1048-1062},
+  abstract={Busy life as well as the prevalence of infotainment is increasingly making people more occupied even during tasks that require serious attention. One such task is driving and at the same time getting involved in activities that may distract drivers cognitively from watching the road and cause fatal accidents. This paper presents a method that is capable of monitoring different types of distractions, such as talking and texting on cell phone, casual eating, and operating cabin equipment while driving, so that a driver can be assisted to remain cautious on the road. The proposed method automatically detects and tracks fiducial body parts of a driver from video captured by a camera mounted on the front windshield inside a vehicle. Relative distances between the tracking trajectories are used as features that represent actions of the driver. Then, the well-known kernel support vector machine is applied for recognizing a particular distraction from the features extracted from body parts. The proposed feature is also compared with previously employed features for tracking-based human action recognition schemes to substantiate its better result in terms of mean accuracy and robustness for distraction recognition. The effectiveness of the proposed method of distraction recognition is also analyzed with respect to tracking errors.},
+  keywords={Vehicles;Monitoring;Trajectory;Roads;Tracking;Cellular phones;Cameras;Assistive driving;distraction recognition;tracking of fiducial body parts;trajectory classification},
+  doi={10.1109/TCSVT.2018.2818407},
+  ISSN={1558-2205},
+  month={April},
+url={https://ieeexplore.ieee.org/abstract/document/8322191?casa_token=zZcVyZAmb1IAAAAA:5zdJtq_AINrlrtMqRm3gunPOjAB2oQyfaAYbKN28iQEyt7Wd5RJslOQHvmfZwYQXLv4jXQfq},}
+
+
+
+@article{Yang_2021_RGBvideo,
+title = {Multi-scale driver behavior modeling based on deep spatial-temporal representation for intelligent vehicles},
+journal = {Transportation Research Part C: Emerging Technologies},
+volume = {130},
+pages = {103288},
+year = {2021},
+issn = {0968-090X},
+doi = {https://doi.org/10.1016/j.trc.2021.103288},
+url = {https://www.sciencedirect.com/science/article/pii/S0968090X21002990},
+author = {Yang,Xing and Chen,Lv and Dongpu,Cao and Efstathios,Velenis},
+keywords = {Intelligent vehicle, Multi-scale driver behaviors, Mutual understanding, Deep learning},
+abstract = {The mutual understanding between driver and vehicle is critical to the realization of intelligent vehicles and customized interaction interface. In this study, a unified driver behavior modeling system toward multi-scale behavior recognition is proposed to enhance the driver behavior reasoning ability for intelligent vehicles. Specifically, the driver behavior recognition system is designed to simultaneously recognize the driver's physical and mental states based on a deep encoder-decoder framework. The model jointly learns to recognize three driver behaviors with different time scales: mirror checking and facial expression state, and two mental behaviors, including intention and emotion. The encoder module is designed based on a deep convolutional neural network (CNN) to capture spatial information from the input video stream. Then, several decoders for different driver states estimation are proposed with fully-connected (FC) and long short-term memory (LSTM) based recurrent neural networks (RNN). Two naturalistic datasets are used in this study to investigate the model performance, which is a local highway dataset, namely, CranData, and one public dataset from Brain4Cars. Based on the spatial–temporal representation of driver physical behavior, it shows that the observed physical behaviors can be used to model the latent mental behaviors through the proposed end-to-end learning process. The testing results on these two datasets show state-of-the-art results on mirror checking behavior, intention, and emotion recognition. With the proposed system, intelligent vehicles can gain a holistic understanding of the driver's physical and phycological behaviors to better collaborate and interact with the human driver, and the driver behavior reasoning system helps to reduce the conflicts between the human and vehicle automation.}
+}
